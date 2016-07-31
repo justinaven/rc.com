@@ -1,0 +1,43 @@
+name:        Relative Commics
+
+safe:        false
+host:        0.0.0.0
+port:        4000
+baseurl:     /
+url:         http://RelativeCommics.com
+lsi:         false
+
+source:                 .
+destination:    ./_site
+plugins_dir:     ./_plugins
+layouts_dir:     ./_layouts
+include:
+    - '.htaccess'
+    - _1_foundations
+    - _mixins
+    - _2_layout
+    - _3_elements
+    - _4_modules
+    - _5_sections
+    - '*.scss'
+exclude:
+    - node_modules
+    - Gruntfile.js
+    - package.json
+    - bower.json
+    - README.md
+    - TODO.md
+
+future:      true
+show_drafts: nil
+limit_posts: 0
+highlighter: rouge
+
+relative_permalinks: false
+
+permalink: /blog/:title/
+gems: [jekyll-paginate]
+paginate_path: '/blog/page:num/'
+paginate: 5
+
+markdown:    kramdown

@@ -1,0 +1,22 @@
+//
+//   @site-main
+// --------------------------------------------------------
+//  _5_sections/_site-main.scss
+// --------------------------------------------------------
+//
+//  main content
+//
+// --------------------------------------------------------
+
+
+.site-main {
+  padding: 0;
+  margin: spacing('xl') auto 0 auto ;
+}
+
+
+.section {
+  background: color('cream');
+  color: color('gray','dark');
+  padding: spacing('xl') 0;
+}

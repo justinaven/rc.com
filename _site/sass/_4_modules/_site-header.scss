@@ -1,0 +1,100 @@
+//
+//   @site-header
+// --------------------------------------------------------
+//  _5_sections/_site-header.scss
+// --------------------------------------------------------
+//
+//  Site-wide header
+//
+// --------------------------------------------------------
+
+.site-header {
+  // box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  @include clearfix;
+  background: color('blue');
+
+}
+
+.site-nav {
+  list-style:none;
+  padding-bottom: 0;
+  position:relative;
+  &__list {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    position:relative;
+    a {
+      color: color('cream');
+      display: inline-block;
+      font-size: rem(18);
+      font-weight: bold;
+      padding:  spacing('m');
+      position:relative;
+      text-decoration: none;
+      .blog &.blog,
+      .contact &.contact,
+      .portfolio &.portfolio
+       {
+        color: color('silver');
+        cursor: default;
+      }
+    }
+    &:hover a {
+      color: color('silver');
+    }
+  }
+}
+
+
+
+//   @branding
+// --------------------------------------------------------
+//  The logo & (optional) wordmark
+//
+//  This would be setup like this
+//
+//  <a href="/" class="branding">
+//    <img src="logo.svg" class="branding__logo" alt="My Company">
+//    <h1 class="branding__wordmark">My Company</h1>
+//  </a>
+// --------------------------------------------------------
+
+a.branding {
+  float: left;
+  color: color('silver');
+}
+
+.branding__logo {
+  // padding: $spacing-m $spacing-m $spacing-m 0;
+  // height: 75px;
+  // width: auto;
+  // margin-bottom: -17px;
+  // position: relative;
+  // z-index: 60;
+
+  // @include media('screen and (min-width: 480px)', false) {
+  //  padding:0 $spacing-l 0 0;
+  // }
+
+}
+
+// .branding__wordmark {
+//   left:-9999px;
+//   position: absolute;
+//   top:-9999px;
+// }
+
+
+
+
+//   @site-nav
+// --------------------------------------------------------
+//  Main Site Navigation
+// --------------------------------------------------------
+
+.site-nav {
+    float: right;
+}

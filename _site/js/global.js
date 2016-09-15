@@ -8,36 +8,47 @@ Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:
 Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield)\b/,number:/\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,"function":/[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*(?=\()/i}),Prism.languages.insertBefore("javascript","keyword",{regex:{pattern:/(^|[^\/])\/(?!\/)(\[.+?]|\\.|[^\/\\\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})]))/,lookbehind:!0}}),Prism.languages.insertBefore("javascript","class-name",{"template-string":{pattern:/`(?:\\`|\\?[^`])*`/,inside:{interpolation:{pattern:/\$\{[^}]+\}/,inside:{"interpolation-punctuation":{pattern:/^\$\{|\}$/,alias:"punctuation"},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&&Prism.languages.insertBefore("markup","tag",{script:{pattern:/(<script[\w\W]*?>)[\w\W]*?(?=<\/script>)/i,lookbehind:!0,inside:Prism.languages.javascript,alias:"language-javascript"}}),Prism.languages.js=Prism.languages.javascript;
 
 Zepto(function($){
-  var port = $('.port-grid');
-  if(port.length>0){
-    $('body').append('<div class="port-item-slide-overlay"></div><div class="port-item-slide-wrap"><div class="close-port container"><div class="close-port__wrap">Close <span class="close-x">&times;</span></div></div><div class="port-item-slide-inner"></div></div>');
+  $('html').addClass('js');
 
-    $('.close-port').on('click', function(){
-      $('html').removeClass('modal');
-      var close_target = $(this).closest('.port-item-slide-wrap').find('.load-wrapper.on');
-      setTimeout(function(){
-        close_target.removeClass('block');
-      },350);
-      close_target.removeClass('on');
+  // initialize all modals & modal-links on page load
+  if($('.modal-link').length>0){
+    $('.modal-link').each(function(){
+        var $this = $(this);
+        var target = $this.attr('href');
+        $this.on('click', function(e){
+          e.preventDefault();
+          openModal(target);
+      });
     });
-
-    port.find('.port-grid__item-wrap').on('click', function(e){
-      e.preventDefault();
-      var target_a = $(this).attr('href').split('/');
-      var target = '';
-      for (i = target_a.length-1; i >= 0; i--) {
-        if(target_a[i].length>0){target = target_a[i]; break}
-      }
-
-      if($('#'+target).length>0){
-        $('#'+target).addClass('on').addClass('block');
-        $('html').addClass('modal');
-      }else{
-        $('.port-item-slide-inner').append('<div id="'+target+'" class="container load-wrapper on block"></div>').find('#'+target).load('/portfolio/'+target+' .port-item');
-
-      }
-      $('html').addClass('modal');
-    }); // end on click
+    // to open modal
+    function openModal(target_id){
+      $('html').addClass('modal-on');
+      $(target_id).addClass('on');
+    }
+    // close modal if anywhere other than modal is clicked or if ESC key pressed
+    $('.modal__container, .modal__container .modal__wrapper, .modal__container .modal__close').on('click', function(){
+      $('html').removeClass('modal-on');
+      $(this).removeClass('on').find('.modal__container.on').removeClass('on');
+    });
+    $(document).keyup(function(e) {
+      if (e.keyCode == 27) { $('.modal__container.on').removeClass('on'); }
+    });
   }
+
+  // Film Summary toggle
+  $('.film__summary .film__info__label').on('click', function(){
+    $(this).toggleClass('show');
+    $('.film__summary-toggle').toggleClass('show');
+  });
+
+
+
+
+
+
+  // $(window).resize(function(e) {
+
+  // });
+
 
 });

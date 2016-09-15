@@ -23,12 +23,12 @@
 
     margin: 0 auto;
     max-width: $maxwidth; // restricts width
-    padding: 0 rem(32);   // adds padding on viewports less than the max-width
+    padding: 0 rem(16);   // adds padding on viewports less than the max-width
     @media screen and (min-width: breakpoint('m')) {
-      padding: 0 4rem;
+      padding: 0 1.5rem;
     }
     @media screen and (min-width: breakpoint('l')) {
-      padding: 0 6rem;
+      padding: 0 2rem;
     }
 }
 

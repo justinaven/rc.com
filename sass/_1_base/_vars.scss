@@ -219,21 +219,18 @@ $breakpoint-has-pull:   ('s', 'm', 'l', 'xl');
 // there is also a function to return these colors quickly. Ex. color('aqua')
 $colors: (
     // Cool
-    'aqua'              : #BDCBD6,
-    'navy'              : #354458,
-    'blue'              : #3A516F,
-    'cream'             : #F1EBE6,
+    'navy'              : #0a111f,
+    'blue'              : #1a4866,
+    'sky'              : #4c81ae,
     // Warm
-    'orange'            : #BB7248,
-    'red'               : #A03434,
+    'red'               : #871313,
     // Grey Scale
     'white'             : #fff,
-    'silver'            : #ddd,
+    'silver'            : #f1f1f1,
     'gray'              : (
-                            'bgray ': #BB7248,
                             'base'  : #aaa,
                             'light' : #ccc,
-                            'dark'  : #333
+                            'dark'  : #292929
                           ),
     'black'             : #111,
 );
@@ -243,7 +240,7 @@ $colors: (
 
 
 // Assign colors to roles
-$body-color             : transparent;
+$body-color             : color('silver');
 $text-color             : color('navy');
 
 // Now define another set of colors. These will be used to style alerts, inputs and buttons

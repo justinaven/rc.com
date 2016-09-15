@@ -5,8 +5,8 @@ module.exports = function(grunt) {
         autoprefixer: {
           main: {
             options: {
-              browsers: ['> 1%', 'last 2 versions', 'ie >= 8'],
-              map: true
+              browsers: ['> 1%', 'last 2 versions', 'ie >= 8']//,
+              //map: true
             },
             src: 'css/*.css'
           }
@@ -58,8 +58,8 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'compressed',
-                    sourcemap: 'true'
+                    style: 'compressed'//,
+                    //sourcemap: 'true'
                 },
                 files: [{
                     expand: true,
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
                 config: '.scss-lint.yml',
                 reporterOutput: null,
                 colorizeOutput: true,
-                compact: true,
+                compact: true//,
                 // force: true
             }
         },

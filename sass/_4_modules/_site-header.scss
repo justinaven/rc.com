@@ -11,7 +11,7 @@
 .site-header {
   // box-shadow: 0 1px 3px rgba(0,0,0,.3);
   @include clearfix;
-  background: color('blue');
+  background: color('red');
 
 }
 
@@ -27,20 +27,14 @@
     display: inline-block;
     position:relative;
     a {
-      color: color('cream');
-      display: inline-block;
-      font-size: rem(18);
-      font-weight: bold;
-      padding:  spacing('m');
-      position:relative;
-      text-decoration: none;
-      .blog &.blog,
-      .contact &.contact,
-      .portfolio &.portfolio
-       {
-        color: color('silver');
-        cursor: default;
-      }
+      // color: color('cream');
+      // display: inline-block;
+      // font-size: rem(18);
+      // font-weight: bold;
+      // padding:  spacing('m');
+      // position:relative;
+      // text-decoration: none;
+
     }
     &:hover a {
       color: color('silver');

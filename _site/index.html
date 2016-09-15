@@ -30,8 +30,10 @@
     <script type="text/javascript" src="js/ie.js"></script>
     <![endif]-->
 
+    <!-- LiveReload for LOCAL DEV ONLY -->
+    <script src="/livereload.js"></script>
 </head>
-<body class="">
+<body class="home">
 
 <!-- Site's Header-->
 <header class="site-header" role="banner">
@@ -55,18 +57,784 @@
 <!-- Site's Main Content-->
 <main class="site-main" role="main">
   <section class="section">
-    <div class="section__inner container">
-        <div class="grid">
-    <div class="grid__item one-whole s--one-half m--one-third l--one-quarter">
-      <!-- <img src="img/me.jpg"> --> Some text
-    </div><!--
-    --><div class="grid__item one-whole s--one-half  m--two-thirds l--three-quarters">
-      <!-- <div class="me-intro--inner">
-      </div> -->
-    </div>
-  </div>
+    <h2 class="section__title">The Line Up</h2>
 
+<div class="lineup">
+  <div class="lineup__head container">
+    <div class="grid">
+      <div class="grid__item lineup__quick-view   s--one-fifth">Quick View</div><!--
+   --><div class="grid__item lineup__film-title   s--one-fifth">Film/Show Title</div><!--
+   --><div class="grid__item lineup__release-date s--one-fifth">Release Date</div><!--
+   --><div class="grid__item lineup__comic-co     s--one-fifth">Comic Co</div><!--
+   --><div class="grid__item lineup__Universe     s--one-fifth">Universe</div>
     </div>
+
+  </div>
+  <div class="lineup__row container">
+    <div class="film inner">
+      <div class="film__bg-img img-ta" style="background-image: url(/img/bvs-bg.jpg)">
+      </div>
+
+      <div class="grid">
+        <div class="grid__item s--one-third m--one-fifth film__img">
+          <div class="film__img__wrap">
+            <div>
+              <img src="/img/bvs.jpg">
+            </div>
+          </div>
+        </div><!--
+
+        --><div class="grid__item s--two-thirds m--four-fifths film__info">
+          <div class="grid">
+            <div class="grid__item film__info__col film__title">
+              <h3 class="film__info__val"><a class="flim__link" href="#">Batman vs. Superman: Dawn of Justice</a></h3>
+            </div><!--
+             --><div class="grid__item one-whole m--one-half film__info__col film__date">
+              <div class="film__info__label inline">
+                <h4>Release Date:</h4>
+              </div>
+              <p class="film__info__val">03/25/16</p>
+            </div><!--
+             --><div class="grid__item one-whole m--one-half film__info__col film__comic">
+              <div class="film__info__label inline">
+                <h4>Comic Co:</h4>
+              </div>
+              <p class="film__info__val"><a class="film__link" href="#">DC Comics</a></p>
+            </div><!--
+             --><div class="grid__item one-whole m--one-half film__info__col film__universe">
+              <div class="film__info__label inline">
+                <h4>Universe:</h4>
+              </div>
+              <p class="film__info__val"><a class="film__link" href="#">DCEU</a></p>
+            </div><!--
+             --><div class="grid__item one-whole m--one-half film__info__col film__summary">
+              <div class="film__info__label inline">
+                <h4>Summary</h4>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col one-whole film__summary-toggle">
+              <div class="film__summary-toggle__text text">
+                <div class="film__summary-toggle__label">
+                  <h4>Summary</h4>
+                </div>
+                <p>Bacon ipsum dolor amet tri-tip bresaola strip steak short loin tongue, fatback short ribs andouille.<p>
+                </p>Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin. Prosciutto chicken pork fatback capicola jowl jerky pork loin. Bresaola doner prosciutto spare ribs meatloaf venison. Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin.  Alcatra meatball strip steak, bacon leberkas sirloin t-bone spare ribs jowl short loin. Prosciutto chicken pork fatback capicola jowl jerky pork loin.</p>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__videos">
+              <div class="film__info__label film__info__label--videos">
+                <h4>Vidoes</h4>
+                <a class="film__videos__view-more view-more" href="#">view all</a>
+              </div>
+              <ul class="film__info__val film__videos--list grid">
+                <li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid1">
+                    <span class="film__vid__num">1</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v1.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--te">Teaser</p>
+                        <p class="film__vid__date">7/5/15</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v2.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">10/15/15</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v2.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">10/15/15</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v2.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">10/15/15</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v2.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">10/15/15</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item one-whole m--one-half l--one-third xl--one-quarter">
+                  <a class="film__vid__link modal-link" href="#bvsvid3">
+                    <span class="film__vid__num">3</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="/img/bvs-v3.jpg">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--re">Related</p>
+                        <p class="film__vid__date">1/25/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div id="bvsvid1" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/IwfUnkBfdZ4" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bvsvid2" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xe1LrMqURuw" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="bvsvid3" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fis-9Zqu2Ro" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__characters">
+              <div class="film__info__label film__info__label--characters">
+                <h4>Main Characters:</h4>
+              </div>
+              <ul class="film__info__val film__characters--list grid">
+                <li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Batman</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Superman</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Wonder Woman</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">The Flash</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Aquaman</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Lex Luther</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Lois Lane</a>
+                </li><!--
+                 --><li class="film__character grid__item one-half m--one-third l--one-quarter">
+                  <a class="film__character__link" href="#">Doomsday</a>
+                </li>
+              </ul>
+            </div><!--
+             --><div class="grid__item film__info__col film__updates">
+              <div class="film__info__label film__info__label--updates">
+                <h4>Latest Updates</h4>
+                <a class="film__updates__view-more view-more" href="#">view all</a>
+              </div>
+              <ul class="film__info__val film__updates--list grid">
+                <li class="film__update grid__item one-whole l--one-half">
+                  <a class="film__update__link" href="#">Croque monsieur halloumi when the cheese comes out everybody's happy</a>
+                </li><!--
+                 --><li class="film__update grid__item one-whole l--one-half">
+                  <a class="film__update__link" href="#">Cheesecake port-salut cheese on toast</a>
+                </li><!--
+                 --><li class="film__update grid__item one-whole l--one-half">
+                  <a class="film__update__link" href="#">Croque monsieur halloumi when the cheese comes out everybody's happy</a>
+                </li><!--
+                 --><li class="film__update grid__item one-whole l--one-half">
+                  <a class="film__update__link" href="#">Cheesecake port-salut cheese on toast</a>
+                </li>
+              </ul>
+            </div><!--
+             --><div class="grid__item film__info__col film__photos__col">
+              <div class="film__info__label film__info__label--photos">
+                <h4>Latest Images</h4>
+                <a class="film__photos__view-more view-more" href="#">view all</a>
+              </div>
+              <div class="film__info__val film__photos">
+                <div class="film__photos__inner">
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p1.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p2.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p3.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p4.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p5.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p6.jpg">
+                    </a>
+                  </div>
+                  <div class="film__photo">
+                    <a class="film__photo__link" href="#">
+                      <img src="/img/bvs-p7.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.film__info -->
+      </div><!-- /.grid -->
+    </div> <!-- /.film -->
+  </div>
+  <div class="lineup__row container">
+    <div class="film inner">
+      <div class="film__bg-img img-ta" style="background-image: url(/img/civil-war-bg.jpg)">
+      </div>
+
+      <div class="grid">
+        <div class="grid__item m--one-fifth film__img">
+          <img src="/img/civil-war.jpg">
+        </div><!--
+
+        --><div class="grid__item m--four-fifths film__info">
+          <div class="grid">
+            <div class="grid__item film__info__col film__title">
+              <h3 class="film__info__val"><a class="flim__link" href="#">Captain America: Civil War</a></h3>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__date">
+              <h4 class="film__info__label">Release Date: </h4>
+              <p class="film__info__val">05/06/16</p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__comic">
+              <h4 class="film__info__label inline">Comic Co:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">Marvel</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__universe">
+              <h4 class="film__info__label inline">Universe:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">MCU</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half film__info__col film__summary">
+              <h4 class="film__info__label inline">Summary</h4>
+            </div><!--
+             --><div class="grid__item film__info__col film__summary-toggle">
+              <div class="film__summary-toggle__text text">
+                <h4 class="film__summary-toggle__label">Summary</h4>
+                <p>Bacon ipsum dolor amet tri-tip bresaola strip steak short loin tongue, fatback short ribs andouille. Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin.</p>
+                <p>Prosciutto chicken pork fatback capicola jowl jerky pork loin. Bresaola doner prosciutto spare ribs meatloaf venison. Alcatra meatball strip steak, bacon leberkas sirloin t-bone spare ribs jowl short loin.</p>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__videos">
+              <h4 class="film__info__label film__info__label--videos">Vidoes</h4>
+              <a class="film__videos__view-more view-more" href="#">view all</a>
+              <ul class="film__info__val film__videos--list grid">
+                <li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid1">
+                    <span class="film__vid__num">1</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--te">Teaser</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid3">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--re">Related</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid4">
+                    <span class="film__vid__num">3</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div id="vid1" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wwcSki7r9cQ" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="vid2" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HSzx-zryEgM" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__characters">
+              <h4 class="film__info__label film__info__label--characters">Main Characters:</h4>
+              <ul class="film__info__val film__characters--list grid">
+                <li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Captain America</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Iron Man</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Winter Soldier</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Black Panther</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Vision</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Scarlett Witch</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Falcon</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Spider-man</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Ant-Man</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Black Widow</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Hawkeye</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">War Machine</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.film__info -->
+      </div><!-- /.grid -->
+    </div> <!-- /.film -->
+  </div>
+  <div class="lineup__row container">
+    <div class="film inner">
+      <div class="film__bg-img img-ta" style="background-image: url(/img/x-men-apocalypse-bg.jpg)">
+      </div>
+
+      <div class="grid">
+        <div class="grid__item m--one-fifth film__img">
+          <img src="/img/x-men-apocalypse.jpg">
+        </div><!--
+
+        --><div class="grid__item m--four-fifths film__info">
+          <div class="grid">
+            <div class="grid__item film__info__col film__title">
+              <h3 class="film__info__val"><a class="flim__link" href="#">X-Men: Apocalypse</a></h3>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__date">
+              <h4 class="film__info__label">Release Date: </h4>
+              <p class="film__info__val">05/27/16</p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__comic">
+              <h4 class="film__info__label inline">Comic Co:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">Marvel</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__universe">
+              <h4 class="film__info__label inline">Universe:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">Marvel/Fox</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half film__info__col film__summary">
+              <h4 class="film__info__label inline">Summary</h4>
+            </div><!--
+             --><div class="grid__item film__info__col film__summary-toggle">
+              <div class="film__summary-toggle__text text">
+                <h4 class="film__summary-toggle__label">Summary</h4>
+                <p>Bacon ipsum dolor amet tri-tip bresaola strip steak short loin tongue, fatback short ribs andouille. Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin.</p>
+                <p>Prosciutto chicken pork fatback capicola jowl jerky pork loin. Bresaola doner prosciutto spare ribs meatloaf venison. Alcatra meatball strip steak, bacon leberkas sirloin t-bone spare ribs jowl short loin.</p>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__videos">
+              <h4 class="film__info__label film__info__label--videos">Vidoes</h4>
+              <a class="film__videos__view-more view-more" href="#">view all</a>
+              <ul class="film__info__val film__videos--list grid">
+                <li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid2">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid3">
+                    <span class="film__vid__num">2</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--re">Related</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid4">
+                    <span class="film__vid__num">3</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div id="vid1" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ElKxCvEHITs" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__characters">
+              <h4 class="film__info__label film__info__label--characters">Main Characters:</h4>
+              <ul class="film__info__val film__characters--list grid">
+                <li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Magneto</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Professor X</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Quicksilver</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Mistique</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Apocalypse</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Psylocke</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Jean Gray</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Cyclops</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Angel</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Storm</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Beast</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.film__info -->
+      </div><!-- /.grid -->
+    </div> <!-- /.film -->
+  </div>
+  <div class="lineup__row container">
+    <div class="film inner">
+      <div class="film__bg-img img-dark" style="background-image: url(/img/suicide-squad-bg.jpg)">
+      </div>
+
+      <div class="grid">
+        <div class="grid__item m--one-fifth film__img">
+          <img src="/img/suicide-squad.jpg">
+        </div><!--
+
+        --><div class="grid__item m--four-fifths film__info">
+          <div class="grid">
+            <div class="grid__item film__info__col film__title">
+              <h3 class="film__info__val"><a class="flim__link" href="#">Suicide Squad</a></h3>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__date">
+              <h4 class="film__info__label">Release Date: </h4>
+              <p class="film__info__val">07/07/16</p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__comic">
+              <h4 class="film__info__label inline">Comic Co:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">DC Comics</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__universe">
+              <h4 class="film__info__label inline">Universe:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">DCEU</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half film__info__col film__summary">
+              <h4 class="film__info__label inline">Summary</h4>
+            </div><!--
+             --><div class="grid__item film__info__col film__summary-toggle">
+              <div class="film__summary-toggle__text text">
+                <h4 class="film__summary-toggle__label">Summary</h4>
+                <p>Bacon ipsum dolor amet tri-tip bresaola strip steak short loin tongue, fatback short ribs andouille. Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin.</p>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__videos">
+              <h4 class="film__info__label film__info__label--videos">Vidoes</h4>
+              <a class="film__videos__view-more view-more" href="#">view all</a>
+              <ul class="film__info__val film__videos--list grid">
+                <li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid1">
+                    <span class="film__vid__num">1</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--re">Related</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid4">
+                    <span class="film__vid__num">3</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--tr">Trailer</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div id="vid1" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ElKxCvEHITs" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__characters">
+              <h4 class="film__info__label film__info__label--characters">Main Characters:</h4>
+              <ul class="film__info__val film__characters--list grid">
+                <li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">The Joker</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Harley Quinn</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Deadshot</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Amanda Waller</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Captain Boomerang</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Killer Croc</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Rick Flag</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Enchantress</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Killer Croc</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Diablo</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Katana</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.film__info -->
+      </div><!-- /.grid -->
+    </div> <!-- /.film -->
+  </div>
+  <div class="lineup__row container">
+    <div class="film inner">
+      <div class="film__bg-img img-ta" style="background-image: url(/img/doctor-strange-bg.jpg)">
+      </div>
+
+      <div class="grid">
+        <div class="grid__item m--one-fifth film__img">
+          <img src="/img/doctor-strange.jpg">
+        </div><!--
+
+        --><div class="grid__item m--four-fifths film__info">
+          <div class="grid">
+            <div class="grid__item film__info__col film__title">
+              <h3 class="film__info__val"><a class="flim__link" href="#">Doctor Strange</a></h3>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__date">
+              <h4 class="film__info__label">Release Date: </h4>
+              <p class="film__info__val">11/07/16</p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__comic">
+              <h4 class="film__info__label inline">Comic Co:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">Marvel</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half  film__info__col film__universe">
+              <h4 class="film__info__label inline">Universe:</h4>
+              <p class="film__info__val"><a class="film__link" href="#">Marvel Cinematic Universe</a></p>
+            </div><!--
+             --><div class="grid__item s--one-half film__info__col film__summary">
+              <h4 class="film__info__label inline">Summary</h4>
+            </div><!--
+             --><div class="grid__item film__info__col film__summary-toggle">
+              <div class="film__summary-toggle__text text">
+                <h4 class="film__summary-toggle__label">Summary</h4>
+                <p>Bacon ipsum dolor amet tri-tip bresaola strip steak short loin tongue, fatback short ribs andouille. Ham hock landjaeger ground round flank hamburger shank ham, tri-tip bacon cupim pork loin jowl doner kevin.</p>
+                <p>Prosciutto chicken pork fatback capicola jowl jerky pork loin. Bresaola doner prosciutto spare ribs meatloaf venison. Alcatra meatball strip steak, bacon leberkas sirloin t-bone spare ribs jowl short loin.</p>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__videos">
+              <h4 class="film__info__label film__info__label--videos">Vidoes</h4>
+              <a class="film__videos__view-more view-more" href="#">view all</a>
+              <ul class="film__info__val film__videos--list grid"><!--
+                 --><li class="film__vid grid__item s--one-quarter">
+                  <a class="film__vid__link modal-link" href="#vid1">
+                    <span class="film__vid__num">1</span>
+                    <div class="film__vid__img-wrap">
+                      <img src="http://placehold.it/320x190">
+                      <div class="film__vid__type-date">
+                        <p class="film__vid__type film__vid__type--re">Related</p>
+                        <p class="film__vid__date">7/5/16</p>
+                      </div>
+                    </div>
+                  </a>
+                </li><!--
+               --></ul>
+              <div id="vid1" class="modal__container">
+                <div class="modal__wrap-va">
+                  <div class="modal__body">
+                    <span class="modal__close">Close</span>
+                    <div class="multimedia">
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ElKxCvEHITs" frameborder="0" allowfullscreen></iframe> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--
+             --><div class="grid__item film__info__col film__characters">
+              <h4 class="film__info__label film__info__label--characters">Main Characters:</h4>
+              <ul class="film__info__val film__characters--list grid">
+                <li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Doctor Strange</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">The Ancient One</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Kaecilius</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Baron Karl Mordo</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Wong</a>
+                </li><!--
+                 --><li class="film__character grid__item s--one-quarter">
+                  <a class="film__character__link" href="#">Nicodemus West</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.film__info -->
+      </div><!-- /.grid -->
+    </div> <!-- /.film -->
+  </div>
+</div>
+
   </section>
 </main>
     <!-- Site's Main Footer-->
@@ -75,16 +843,6 @@
 
         <nav class="site-footer__nav">
           <ul class="site-footer__nav-list" role="navigation">
-            <li class="site-footer__nav-item linkedin"><a href="http://linkedin.com/in/justinaven">LinkedIn</a></li>
-            <li class="site-footer__nav-item codepen">
-              <a href="http://codepen.io/justinaven">Codepen</a>
-            </li>
-            <li class="site-footer__nav-item twitter">
-              <a href="http://twitter.com/justinaven">Twitter</a>
-            </li>
-            <li class="site-footer__nav-item instagram">
-              <a href="http://instagram.com/javen/">Instagram</a>
-            </li>
           </ul>
         </nav>
 
@@ -96,14 +854,14 @@
     <script src="vendor/zepto.min.js"></script>
     <script src="js/global.min.js"></script>
     
-    <script>
+    <!--<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-23885320-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script>-->
 
 </body>
 </html>

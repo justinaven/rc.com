@@ -24,12 +24,11 @@
 // --------------------------------------------------------
 
 a {
-    text-decoration: none;
     transition: color .3s ease-in-out;
-    &:link { color: color('orange'); }
-    &:visited { color: color('orange'); }
-    &:hover { color: saturate(lighten(color('orange'),10%),15%); }
-    &:active { color: color('orange'); }
+    &:link { color: color('sky'); }
+    &:visited { color: color('sky'); }
+    &:hover { color: saturate(lighten(color('sky'),10%),15%); }
+    &:active { color: color('sky'); }
 }
 
 

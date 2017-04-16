@@ -7,7 +7,7 @@
 //  Home page specific styles.
 //
 // ---------------------------------------------------------
-
+$transition: .2s linear;
 .home {
   .site-main {
   }
@@ -30,6 +30,15 @@ img {max-width: 100%;}
 }
 
 .lineup {
+  &__row {
+    position: relative;
+    z-index: 1;
+    transition: z-index 0s .35s linear;
+    &.has-modal-open {
+      z-index: 2;
+      transition: z-index 0s 0s linear;
+    }
+  }
   &__head {
     display: none;
     @include media('screen and (min-width: #{breakpoint("m")})', false) {
@@ -43,22 +52,25 @@ img {max-width: 100%;}
   &__film-title {width:40%;}
   &__release-date {width:20%;}
   &__videos {width:20%;}
-  &__comic-co {display:none}
+  &__comic-co {display:none;}
   &__universe {width:20%;}
 }
 
 // FILM/SHOW
 .film {
   background: #000;
+  border-bottom: 1px solid color('gray','light');
   border-radius: 2px;
   color: #fff;
   margin-bottom: spacing('l');
   overflow: hidden;
   padding: spacing('l');
   position: relative;
+  transition: background $transition, padding $transition, margin $transition;
   @include clearfix;
   a {
     color: color('white');
+    transition: color $transition;
     &:hover {color: color('sky'); }
   }
   .view-more {
@@ -67,7 +79,7 @@ img {max-width: 100%;}
   &.closed {
     background: transparent;
     color: color('navy');
-    margin-bottom: spacing('s');
+    margin-bottom: 0;
     padding: spacing('s') 0;
     a {
       color: color('blue');
@@ -77,7 +89,11 @@ img {max-width: 100%;}
 
   &__img {
     position: relative;
-    .closed & {display: none;}
+    transition: padding $transition, width $transition;
+    .closed & {
+      padding: 0;
+      width: 0;
+    }
     &__wrap {
 
       @include media('screen and (max-width: #{breakpoint("m")})', false) {
@@ -106,13 +122,17 @@ img {max-width: 100%;}
     }
   }
   &__info {
+    transition: width $transition;
     .closed &.film__info {
       width: 100%;
     }
     &__col {
       margin-bottom: spacing('l');
+      margin-top: 0;
+      transition: margin $transition;
       .closed & {
-        margin-bottom: spacing('xs');
+        margin-bottom: spacing('xs')/2;
+        margin-top: spacing('xs')/2;
       }
     }
     &__label {
@@ -270,10 +290,14 @@ img {max-width: 100%;}
     top: 0;
     width: 100%;
     z-index: 0;
+    transition: background $transition, opacity  $transition;
     &.img-ba {background-position: bottom center;}
     &.img-ta {background-position: top center;}
     &.img-dark {opacity: .8;}
-    .closed & {opacity: 0;}
+    .closed & {
+      opacity: 0;
+      background: #888;
+    }
   }
 
   // FILM/SHOW TITLE
@@ -283,6 +307,7 @@ img {max-width: 100%;}
       margin: 0;
       padding-right: 50px;
       font-size: 26px;
+      transition: font-size $transition;
       @include media('screen and (min-width: #{breakpoint("m")})', false) {
        font-size: 32px;
       }
@@ -300,6 +325,7 @@ img {max-width: 100%;}
 
   &__date {
     @include media('screen and (min-width: #{breakpoint("m")})', false) {
+      transition: width $transition;
       .closed & {
         width: 20%;
         .film__info__label {display: none}
@@ -353,6 +379,46 @@ img {max-width: 100%;}
         width: 30px;
       }
     }
+    &__img-wrap {
+      position: relative;
+      &:before {
+        background: red;
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: 30px;
+        left: 50%;
+        margin: -25px 0 0 -15px;
+        opacity:.8;
+        position: absolute;
+        top: 50%;
+        width: 30px;
+        z-index: 1;
+        transition: opacity $transition;
+      }
+      &:after {
+        border-top: 10px solid transparent;
+        border-left: 16px solid white;
+        border-bottom: 10px solid transparent;
+        content: '';
+        display: block;
+        left: 50%;
+        margin: -20px 0 0 -6px;
+        opacity:.8;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transition: opacity $transition;
+      }
+      img {
+        opacity:.8;
+        transition: opacity $transition;
+      }
+      &:hover {
+        &:after,&:before, img {opacity: 1}
+      }
+    }
+
     .closed &__img-wrap {display:none;}
     img {display: block}
     &__num {
@@ -410,15 +476,15 @@ img {max-width: 100%;}
       background: color('silver');
       background: rgba(color('white'),.75);
       border-radius: 1px;
-      .film & {
-        color: color('navy');
-        text-decoration: none;
-        &:hover {color: color('blue');}
-      }
       display: block;
       padding: spacing('s') spacing('xl') spacing('s') spacing('m');
       position: relative;
-      transition: background .25s linear, color .25s linear;
+      .film & {
+        color: color('navy');
+        text-decoration: none;
+        transition: background .25s linear, color .25s linear;
+        &:hover {color: color('blue');}
+      }
       &:before {
         background: color('blue');
         background: rgba(color('blue'),.85);
@@ -557,6 +623,7 @@ img {max-width: 100%;}
       transition: opacity .3s ease-in-out,
                   left 0s 0s linear,
                   top 0s 0s linear;
+      z-index: 1000;
     }
   }
   &__wrap-va {

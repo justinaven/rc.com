@@ -24,11 +24,15 @@
 // --------------------------------------------------------
 
 a {
-    transition: color .3s ease-in-out;
-    &:link { color: color('sky'); }
-    &:visited { color: color('sky'); }
-    &:hover { color: saturate(lighten(color('sky'),10%),15%); }
-    &:active { color: color('sky'); }
+	color: color('sky');
+  transition: color .3s ease-in-out;
+  &:link { color: color('sky'); }
+  &:visited { color: color('sky'); }
+  &:hover {
+  	color: saturate(lighten(color('sky'),10%),15%);
+  	text-decoration: none;
+  }
+  &:active { color: color('sky'); }
 }
 
 
